@@ -2,10 +2,11 @@ import { useFocusable } from '@noriginmedia/norigin-spatial-navigation';
 import PropTypes from 'prop-types'; 
 
 import foto from '../assets/img/pexels-jessica-lewis-creative-633481.jpg';
+import { scrollIntoView } from '../utils/navigation';
 
 export default function CarouselCardComponent(props: any) {  
   const onFocusCard = (event: any) => {
-    event.node.scrollIntoView();
+    scrollIntoView(event.node);
    };
   const { ref, focused } = useFocusable({onFocus: onFocusCard});
   return (

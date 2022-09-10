@@ -4,20 +4,15 @@ import Moment from 'react-moment';
 import CarouselComponent from '../components/carousel'
 import FooterComponent from '../components/footer'
 import HeroComponent from '../components/hero'
-import { NavigationKey } from '../utils/navigation-keys';
+import MenuComponent from '../components/menu';
 var data = require("../data.json");
 
 export default function HomePage() {
-  const { ref, setFocus, focusKey } = useFocusable();
-
-  useEffect(() => {
-    setFocus(NavigationKey.HERO);
-  }, [setFocus]);
-  
+  const { ref, focusKey } = useFocusable();
   return (
     <FocusContext.Provider value={focusKey}>
     <div  ref={ref} className='container-all'>
-        <div className="header">
+        <div className="header border-bottom">
           <div className="edition">
             <p>Edition No. {data.version}</p>
           </div>
@@ -25,15 +20,16 @@ export default function HomePage() {
             <p><Moment format='LLL' interval={60000}>{new Date()}</Moment></p>
           </div>
         </div>
-        <div className="title">
+        <div className="title border-bottom">
           <h1>Newsly</h1>
         </div>
+        <MenuComponent></MenuComponent>
       <div className='content'>
         {
-          data.home.map((item: any, index: number) => {
+          data.home.map((item: any) => {
             switch(item.type) {
-              case 'hero': return <HeroComponent key={item.id} items={item.items} index={index}></HeroComponent>
-              case 'preview': return <CarouselComponent key={item.id} title={item.title} items={item.items} index={index}></CarouselComponent>
+              case 'hero': return <HeroComponent key={item.id} items={item.items}></HeroComponent>
+              case 'preview': return <CarouselComponent key={item.id} title={item.title} items={item.items}></CarouselComponent>
               default: return '';
             }
           })

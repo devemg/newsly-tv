@@ -1,18 +1,17 @@
 import { FocusContext, useFocusable } from "@noriginmedia/norigin-spatial-navigation";
-import { NavigationKey } from "../utils/navigation-keys";
-import { onFocusCarousel } from "../utils/navigation";
+import { scrollIntoView } from "../utils/navigation";
 import HeroSectionComponent from "./hero-card";
 
-function DotComponent (props: any) {
+function DotComponent () {
   const onFocusHero = (event: any) => {
-   onFocusCarousel(props.index, event?.node?.parentElement?.parentElement);
+    scrollIntoView(event?.node?.parentElement?.parentElement);
   };
   const { ref, focused } = useFocusable({ onFocus: onFocusHero });
   return (<div ref={ref} className={focused ? 'dot dot-focused' : 'dot'}></div>);
 }
 
 function HeroComponent(props: any) {
-  const { ref, focusKey } = useFocusable({focusKey: NavigationKey.HERO});
+  const { ref, focusKey } = useFocusable();
 
   return (
     <div className="hero-container">
@@ -30,7 +29,7 @@ function HeroComponent(props: any) {
       <FocusContext.Provider value={focusKey}>
         <div ref={ref} className="news-dots">
         {
-          props.items.map((item: any) => <DotComponent key={item.id} index={props.index}></DotComponent>)
+          props.items.map((item: any) => <DotComponent key={item.id}></DotComponent>)
         }      
       </div>
     </FocusContext.Provider>

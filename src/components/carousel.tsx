@@ -5,7 +5,7 @@ export default function CarouselComponent(props: any) {
   
   return (
     <div className='carousel-container'>
-        <div className="title">
+        <div className="title border-bottom">
           <h3>{props.title}</h3>
         </div>
         <FocusContext.Provider value={focusKey}>

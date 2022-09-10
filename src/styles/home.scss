@@ -8,11 +8,9 @@
   display: flex;
   justify-content: space-between;
   padding: 0 10px;
-  border-bottom: 2px solid black;
 }
 
 .title {
-  border-bottom: 2px solid black;
   h1 {
     font-size: 5vw;
     text-align: center;
@@ -33,4 +31,16 @@
     margin: 0;
     padding: 3vw 0;
   }
+}
+
+.menu {
+  
+  display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    .menu-item {
+      display: flex;
+      margin: 1vw;
+    }
 }

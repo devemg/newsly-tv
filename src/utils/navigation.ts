@@ -1,13 +1,10 @@
+
 /**
- * Center container vertical scroll
+ * Call scrollIntoView function over the element
  *
- * @param index index of elements container in the page
- * @param parentElement Element used as reference to manage the scroll
+ * @param element 
  */
-export const onFocusCarousel = (index: number, parentElement: HTMLElement) => {
-    if (index > 0) {
-        parentElement?.scrollIntoView();
-    } else {
-        window.scrollTo(0, 0);
-    }
-};
+export const scrollIntoView = (element: HTMLElement) => {
+    console.log('scrollIntoView');
+    element?.scrollIntoView();
+}
