@@ -34,12 +34,6 @@
                     "title": "Title #2",
                     "description": "Description of two lines",
                     "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sedona-arizona-royalty-free-image-618222682-1560282323.jpg?crop=0.667xw:1.00xh;0.0639xw,0&resize=768:*"
-                },
-                {
-                    "id": "2.3",
-                    "title": "Title #3",
-                    "description": "Description of two lines",
-                    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/red-cypress-trees-in-autumn-royalty-free-image-1030961712-1560282387.jpg?crop=0.66484xw:1xh;center,top&resize=768:*"
                 }
             ]
         },
@@ -57,18 +51,6 @@
                 {
                     "id": "3.2",
                     "title": "Title #2",
-                    "description": "Description of two lines",
-                    "image": ""
-                },
-                {
-                    "id": "3.3",
-                    "title": "Title #3",
-                    "description": "Description of two lines",
-                    "image": ""
-                },
-                {
-                    "id": "3.4",
-                    "title": "Title #3",
                     "description": "Description of two lines",
                     "image": ""
                 }

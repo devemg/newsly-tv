@@ -1,12 +1,22 @@
+import { FocusContext, useFocusable } from '@noriginmedia/norigin-spatial-navigation';
+import { useEffect } from 'react';
 import Moment from 'react-moment';
 import CarouselComponent from '../components/carousel'
 import FooterComponent from '../components/footer'
 import HeroComponent from '../components/hero'
+import { NavigationKey } from '../navigation-keys';
 var data = require("../data.json");
 
 export default function HomePage() {
+  const { ref, setFocus, focusKey } = useFocusable();
+
+  useEffect(() => {
+    setFocus(NavigationKey.HERO);
+  }, [setFocus]);
+  
   return (
-    <div className='container-all'>
+    <FocusContext.Provider value={focusKey}>
+    <div  ref={ref} className='container-all'>
         <div className="header">
           <div className="edition">
             <p>Edition No. {data.version}</p>
@@ -30,5 +40,6 @@ export default function HomePage() {
       </div>
       <FooterComponent></FooterComponent>
     </div>
+    </FocusContext.Provider>
   )
 }
