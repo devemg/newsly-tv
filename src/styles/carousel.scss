@@ -1,0 +1,20 @@
+.carousel-container {
+  background-color: blue;
+  .cards-container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .card {
+    padding: 1vw;
+    .img-card {
+      width: 15vw;
+    }
+
+    .description-card {
+      text-align: justify;
+    }
+  }
+}

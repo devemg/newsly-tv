@@ -1,0 +1,40 @@
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .news-container {
+        h1 {
+           margin-bottom: 0;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .content {
+           display: flex;
+           padding: 0 10px;
+       
+           img {
+               height: 60vh;
+               margin-left: 10px;
+           }
+       }
+    }
+    
+    .news-dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 1vw;
+
+        .dot {
+            background-color: rgb(33, 33, 33);
+            width: 1.5vw;
+            height: 1.5vw;
+            border-radius: 100%;
+            margin-left: 5px;
+        }
+    }
+}
