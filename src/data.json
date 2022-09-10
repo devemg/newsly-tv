@@ -1,5 +1,5 @@
 {
-    "version": "1",
+    "version": "2",
     "title": "Newsly",
     "language": "en",
     "home": [
@@ -34,6 +34,42 @@
                     "title": "Title #2",
                     "description": "Description of two lines",
                     "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sedona-arizona-royalty-free-image-618222682-1560282323.jpg?crop=0.667xw:1.00xh;0.0639xw,0&resize=768:*"
+                },
+                {
+                    "id": "2.3",
+                    "title": "Title #1",
+                    "description": "Description of two lines",
+                    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/tundra-showing-its-autumn-colours-denali-national-park-news-photo-973103214-1560282228.jpg?crop=0.66699xw:1xh;center,top&resize=768:*"
+                },
+                {
+                    "id": "2.4",
+                    "title": "Title #2",
+                    "description": "Description of two lines",
+                    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sedona-arizona-royalty-free-image-618222682-1560282323.jpg?crop=0.667xw:1.00xh;0.0639xw,0&resize=768:*"
+                },
+                {
+                    "id": "2.5",
+                    "title": "Title #1",
+                    "description": "Description of two lines",
+                    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/tundra-showing-its-autumn-colours-denali-national-park-news-photo-973103214-1560282228.jpg?crop=0.66699xw:1xh;center,top&resize=768:*"
+                },
+                {
+                    "id": "2.6",
+                    "title": "Title #2",
+                    "description": "Description of two lines",
+                    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sedona-arizona-royalty-free-image-618222682-1560282323.jpg?crop=0.667xw:1.00xh;0.0639xw,0&resize=768:*"
+                },
+                {
+                    "id": "2.7",
+                    "title": "Title #1",
+                    "description": "Description of two lines",
+                    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/tundra-showing-its-autumn-colours-denali-national-park-news-photo-973103214-1560282228.jpg?crop=0.66699xw:1xh;center,top&resize=768:*"
+                },
+                {
+                    "id": "2.8",
+                    "title": "Title #2",
+                    "description": "Description of two lines",
+                    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sedona-arizona-royalty-free-image-618222682-1560282323.jpg?crop=0.667xw:1.00xh;0.0639xw,0&resize=768:*"
                 }
             ]
         },
@@ -51,6 +87,31 @@
                 {
                     "id": "3.2",
                     "title": "Title #2",
+                    "description": "Description of two lines",
+                    "image": ""
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "type": "preview",
+            "title": "Newest in ITALY",
+            "items": [
+                {
+                    "id": "4.1",
+                    "title": "Title #1",
+                    "description": "Description of two lines",
+                    "image": "https://st.depositphotos.com/1764422/1344/i/950/depositphotos_13449494-stock-photo-zocalo-in-mexico-city.jpg"
+                },
+                {
+                    "id": "4.2",
+                    "title": "Title #2",
+                    "description": "Description of two lines",
+                    "image": ""
+                },
+                {
+                    "id": "4.3",
+                    "title": "Title #3",
                     "description": "Description of two lines",
                     "image": ""
                 }
