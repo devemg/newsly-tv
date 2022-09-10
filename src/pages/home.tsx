@@ -1,11 +1,11 @@
 import React from 'react'
 import CarouselComponent from '../components/carousel'
+import FooterComponent from '../components/footer'
 import HeroComponent from '../components/hero'
 
 export default function HomePage() {
   return (
     <div className='container-all'>
-      <div className="left-element">
         <div className="header">
           <div className="edition">
             <p>Edition No. 1</p>
@@ -17,8 +17,13 @@ export default function HomePage() {
         <div className="title">
           <h1>Newsly</h1>
         </div>
-      <HeroComponent></HeroComponent>
-      <CarouselComponent></CarouselComponent>
+      <div className='content'>
+        <HeroComponent></HeroComponent>
+        <CarouselComponent></CarouselComponent>
+        <CarouselComponent></CarouselComponent>
+        <CarouselComponent></CarouselComponent>
+        <CarouselComponent></CarouselComponent>
+        <FooterComponent></FooterComponent>
       </div>
     </div>
   )

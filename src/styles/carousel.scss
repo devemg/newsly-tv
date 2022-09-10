@@ -1,5 +1,10 @@
 .carousel-container {
-  background-color: blue;
+  margin-top: 1vw;
+  
+  .title h3 {
+    margin-top: 0;
+  }
+
   .cards-container {
     overflow: hidden;
     display: flex;

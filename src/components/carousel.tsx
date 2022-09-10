@@ -1,4 +1,5 @@
 import React from 'react'
+import CarouselCardComponent from './carousel-card'
 
 export default function CarouselComponent() {
   return (
@@ -7,6 +8,12 @@ export default function CarouselComponent() {
           <h3>Last News</h3>
         </div>
         <div className="cards-container">
+          <CarouselCardComponent></CarouselCardComponent>
+          <CarouselCardComponent></CarouselCardComponent>
+          <CarouselCardComponent></CarouselCardComponent>
+          <CarouselCardComponent></CarouselCardComponent>
+          <CarouselCardComponent></CarouselCardComponent>
+          <CarouselCardComponent></CarouselCardComponent>
         </div>
     </div>
   )
