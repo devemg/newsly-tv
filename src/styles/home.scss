@@ -42,5 +42,10 @@
     .menu-item {
       display: flex;
       margin: 1vw;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
     }
 }

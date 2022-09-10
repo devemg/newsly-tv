@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 import './styles/styles.scss';
+import { BrowserRouter } from "react-router-dom";
 
 import reportWebVitals from './reportWebVitals';
 import { init } from '@noriginmedia/norigin-spatial-navigation';
-import HomePage from './pages/home';
+import App from './App';
 
 init({
   debug: false,
@@ -16,7 +17,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <HomePage />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
