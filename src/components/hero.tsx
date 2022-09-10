@@ -1,5 +1,5 @@
 import { FocusContext, useFocusable } from "@noriginmedia/norigin-spatial-navigation";
-import { NavigationKey } from "../navigation-keys";
+import { NavigationKey } from "../utils/navigation-keys";
 import { onFocusCarousel } from "../utils/navigation";
 import HeroSectionComponent from "./hero-card";
 

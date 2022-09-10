@@ -4,7 +4,7 @@ import Moment from 'react-moment';
 import CarouselComponent from '../components/carousel'
 import FooterComponent from '../components/footer'
 import HeroComponent from '../components/hero'
-import { NavigationKey } from '../navigation-keys';
+import { NavigationKey } from '../utils/navigation-keys';
 var data = require("../data.json");
 
 export default function HomePage() {
