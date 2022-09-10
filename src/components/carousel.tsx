@@ -1,19 +1,22 @@
 import React from 'react'
 import CarouselCardComponent from './carousel-card'
 
-export default function CarouselComponent() {
+export default function CarouselComponent(props: any) {
   return (
     <div className='carousel-container'>
         <div className="title">
-          <h3>Last News</h3>
+          <h3>{props.title}</h3>
         </div>
         <div className="cards-container">
-          <CarouselCardComponent></CarouselCardComponent>
-          <CarouselCardComponent></CarouselCardComponent>
-          <CarouselCardComponent></CarouselCardComponent>
-          <CarouselCardComponent></CarouselCardComponent>
-          <CarouselCardComponent></CarouselCardComponent>
-          <CarouselCardComponent></CarouselCardComponent>
+          {
+            props.items.map((item: any) => 
+            <CarouselCardComponent
+            title={item.title}
+            description={item.description}
+            image={item.image}
+            key={item.id}
+            ></CarouselCardComponent>)
+          }
         </div>
     </div>
   )

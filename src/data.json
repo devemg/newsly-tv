@@ -1,0 +1,78 @@
+{
+    "version": "1",
+    "title": "Newsly",
+    "language": "en",
+    "home": [
+        {
+            "id": "1",
+            "type": "hero",
+            "items": [
+                {
+                    "id": "1.1",
+                    "title": "Title 1 in hero",
+                    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/fall-colors-alabama-1659107289.jpg?crop=0.668xw:1.00xh;0.321xw,0&resize=768:*",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at finibus ante. Maecenas venenatis in sapien ut commodo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In tortor ex, consequat ut pretium sit amet, ultricies quis turpis.",
+                        "Maecenas semper nisl nec sapien congue consectetur. Vivamus eu odio pulvinar, bibendum orci ac, volutpat massa. Praesent eget magna nec lectus dignissim accumsan. In eget dui ut nisi tincidunt accumsan. Nulla condimentum massa et porta vestibulum. Mauris elementum lectus dolor, at dignissim magna vehicula ut. Donec interdum vel massa dictum suscipit. In eget massa ornare, convallis quam ut, maximus tellus."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "type": "preview",
+            "title": "Newest Fall",
+            "items": [
+                {
+                    "id": "2.1",
+                    "title": "Title #1",
+                    "description": "Description of two lines",
+                    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/tundra-showing-its-autumn-colours-denali-national-park-news-photo-973103214-1560282228.jpg?crop=0.66699xw:1xh;center,top&resize=768:*"
+                },
+                {
+                    "id": "2.2",
+                    "title": "Title #2",
+                    "description": "Description of two lines",
+                    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sedona-arizona-royalty-free-image-618222682-1560282323.jpg?crop=0.667xw:1.00xh;0.0639xw,0&resize=768:*"
+                },
+                {
+                    "id": "2.3",
+                    "title": "Title #3",
+                    "description": "Description of two lines",
+                    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/red-cypress-trees-in-autumn-royalty-free-image-1030961712-1560282387.jpg?crop=0.66484xw:1xh;center,top&resize=768:*"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "type": "preview",
+            "title": "Newest in MX",
+            "items": [
+                {
+                    "id": "3.1",
+                    "title": "Title #1",
+                    "description": "Description of two lines",
+                    "image": "https://st.depositphotos.com/1764422/1344/i/950/depositphotos_13449494-stock-photo-zocalo-in-mexico-city.jpg"
+                },
+                {
+                    "id": "3.2",
+                    "title": "Title #2",
+                    "description": "Description of two lines",
+                    "image": ""
+                },
+                {
+                    "id": "3.3",
+                    "title": "Title #3",
+                    "description": "Description of two lines",
+                    "image": ""
+                },
+                {
+                    "id": "3.4",
+                    "title": "Title #3",
+                    "description": "Description of two lines",
+                    "image": ""
+                }
+            ]
+        }
+    ]
+}
