@@ -30,10 +30,11 @@ export default function HomePage() {
         </div>
       <div className='content'>
         {
-          data.home.map((item: any) => {
+          data.home.map((item: any, index: number) => {
             switch(item.type) {
-              case 'hero': return <HeroComponent key={item.id} items={item.items}></HeroComponent>
-              case 'preview': return <CarouselComponent key={item.id} title={item.title} items={item.items}></CarouselComponent>
+              case 'hero': return <HeroComponent key={item.id} items={item.items} index={index}></HeroComponent>
+              case 'preview': return <CarouselComponent key={item.id} title={item.title} items={item.items} index={index}></CarouselComponent>
+              default: return '';
             }
           })
         }

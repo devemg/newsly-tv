@@ -8,7 +8,7 @@ import { init } from '@noriginmedia/norigin-spatial-navigation';
 import HomePage from './pages/home';
 
 init({
-  debug: true,
+  debug: false,
 });
 
 const root = ReactDOM.createRoot(

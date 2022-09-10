@@ -1,7 +1,11 @@
 import { FocusContext, useFocusable } from '@noriginmedia/norigin-spatial-navigation';
+import { onFocusCarousel } from '../utils/navigation';
 import CarouselCardComponent from './carousel-card'
 export default function CarouselComponent(props: any) {
-  const { ref, focusKey } = useFocusable({focusKey: props.id});
+  const onFocusCards = (event: any) => {
+    onFocusCarousel(props.index, event?.node?.parentElement);
+   };
+  const { ref, focusKey } = useFocusable({focusKey: props.id, onFocus: onFocusCards });
   
   return (
     <div className='carousel-container'>
